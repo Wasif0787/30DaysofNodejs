@@ -11,5 +11,5 @@ function readFileContent(filePath) {
 }
 console.log("Contents");
 readFileContent(__dirname + "\\file1.txt")
-readFileContent(__dirname + "\\file2.txt")
-readFileContent(__dirname + "\\file3.txt")
+readFileContent(__dirname + "\\empty-file.txt")
+readFileContent(__dirname + "\\nonexistent-file.txt")
