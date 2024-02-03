@@ -11,4 +11,3 @@ function writeToFile(filePath, content) {
 }
 writeToFile(__dirname + "\\test-files\\output.txt", "Sample Content.")
 writeToFile(__dirname + "\\test-files\\nonexistent-folder\\output.txt", "Sample Content by me XYZ")
-// console.log(__dirname);
