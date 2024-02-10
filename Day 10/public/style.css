@@ -1,0 +1,32 @@
+h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.parent{
+    width: 500px;
+    margin: auto;
+}
+
+.c1 {
+    background-color: orange;
+    height: 100px; /* Adjust height as needed */
+}
+
+.c2 {
+    background-color: white;
+    height: 100px; /* Adjust height as needed */
+}
+
+.c3 {
+    background-color: green;
+    height: 100px; /* Adjust height as needed */
+}
+.circle{
+    border-radius: 50%;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
