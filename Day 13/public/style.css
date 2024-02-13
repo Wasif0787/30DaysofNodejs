@@ -1,0 +1,58 @@
+/* style.css */
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; /* Example margin */
+  }
+  
+  #messageInput {
+    margin-bottom: 10px; /* Add margin between input and button */
+    padding: 10px; /* Add padding to input */
+    border: 2px solid #3498db; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    font-size: 16px; /* Increase font size */
+  }
+  
+  #messageInput:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #2980b9; /* Change border color on focus */
+  }
+  
+  #messageInput::placeholder {
+    color: #7f8c8d; /* Placeholder text color */
+  }
+  
+  #sendButton {
+    background-color: #2ecc71; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Increase font size */
+    cursor: pointer; /* Add cursor pointer */
+    transition: background-color 0.3s; /* Add transition effect */
+  }
+  
+  #sendButton:hover {
+    background-color: #27ae60; /* Change button background color on hover */
+  }
+  
+  #messages {
+    margin-top: 20px; /* Add margin above messages */
+    padding: 10px; /* Add padding to messages container */
+    border: 2px solid #3498db; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    width: 300px; /* Example width */
+    max-height: 200px; /* Example max height, overflow-y: auto will allow scrolling if content exceeds height */
+    overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
+  }
+  
+  #messages p {
+    margin: 5px 0; /* Add margin between each message */
+    padding: 5px; /* Add padding to each message */
+    background-color: #ecf0f1; /* Message background color */
+    border-radius: 5px; /* Add border radius to messages */
+  }
+  

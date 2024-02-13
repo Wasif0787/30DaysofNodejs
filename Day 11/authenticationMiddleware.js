@@ -36,4 +36,3 @@ const secretKey = process.env.SECRET;
 const token = jwt.sign({}, secretKey, { expiresIn: '1h' });
 
 console.log('Generated token:', token);
-
