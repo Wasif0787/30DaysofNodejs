@@ -19,18 +19,18 @@ const userSchmea = new mongoose.Schema({
 
 const User = mongoose.model('User', userSchmea)
 
-async function addUserToDatabase(user) {
+async function getAllUsers(req, res) {
     try {
-        const newUser = new User(user)
-        await newUser.save()
-        console.log("user added to database");
-        console.log(newUser);
+        const users = await User.find()
+        res.send(users)
     } catch (error) {
-        console.log("Error adding user to database for user " + user);
+        console.log(error);
     }
 }
 
-addUserToDatabase({ username: 'aman', email: 'aman@gmail.com' })
+app.get("/users", (req, res) => {
+    getAllUsers(req, res);
+})
 
 app.listen(3000, () => {
     console.log("Listening to port 3000");
